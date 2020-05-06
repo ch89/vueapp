@@ -17,4 +17,6 @@ Route::get("/", function() {
 	return view("app");
 });
 
+Route::resource("photos", "PhotoController");
+
 Auth::routes();
